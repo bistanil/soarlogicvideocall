@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## React-VideoCall
 Demo app: https://morning-escarpment-67980.herokuapp.com/  
 
@@ -38,3 +39,7 @@ yarn build
 # Run server
 yarn start
 ```
+=======
+# soarlogicvideocall
+video call app Reactjs
+>>>>>>> 9f50686b1adc1ad30bed626dec6541c5e605ee52
