@@ -13,10 +13,9 @@ async function randomID() {
   return id;
 }
 
-exports.create = async (socket) => {
-  const id = await randomID();
+exports.create = async (socket,user_id) => {
+  const id = user_id;
   users[id] = socket;
-  return id;
 };
 
 exports.get = (id) => users[id];

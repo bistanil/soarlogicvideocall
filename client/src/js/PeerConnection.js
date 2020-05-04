@@ -28,6 +28,7 @@ class PeerConnection extends Emitter {
    * @param {Object} config - configuration for the call {audio: boolean, video: boolean}
    */
   start(isCaller, config) {
+    console.log("CONFIOG",config)
     this.mediaDevice
       .on('stream', (stream) => {
         stream.getTracks().forEach((track) => {
