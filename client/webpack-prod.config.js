@@ -7,7 +7,8 @@ const addBaseConfig = require('./webpack-base.config');
 const configs = addBaseConfig({
   mode: 'production',
   output: {
-    filename: 'js/[name].min.js'
+    filename: 'js/[name].min.js',
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -37,7 +38,7 @@ const configs = addBaseConfig({
   plugins: [
     new MiniCssExtractPlugin({ filename: 'css/[name].min.css' }),
     new HtmlWebpackPlugin({
-      title: 'React VideoCall - Minh Son Nguyen',
+      title: 'React VideoCall - soarlogic',
       filename: path.join(__dirname, 'index.html'),
       template: 'src/html/index.html'
     })
