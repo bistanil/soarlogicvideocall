@@ -7,7 +7,8 @@ const addBaseConfig = require('./webpack-base.config');
 const configs = addBaseConfig({
   mode: 'production',
   output: {
-    filename: 'js/[name].min.js'
+    filename: 'js/[name].min.js',
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -27,7 +28,6 @@ const configs = addBaseConfig({
             options: {
               name: '[name].[ext]',
               outputPath: 'assets',
-              publicPath: '/'
             }
           }
         ]
