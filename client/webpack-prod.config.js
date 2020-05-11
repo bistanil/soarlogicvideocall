@@ -27,7 +27,7 @@ const configs = addBaseConfig({
             options: {
               name: '[name].[ext]',
               outputPath: 'assets',
-              publicPath: '/dist/js'
+              publicPath: '/'
             }
           }
         ]
