@@ -29,6 +29,7 @@ const configs = addBaseConfig({
               outputPath: 'assets',
               publicPath: '/dist/assets',
               contentBase: './',
+              historyApiFallback: true,
             }
           }
         ]
