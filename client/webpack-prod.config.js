@@ -41,13 +41,6 @@ const configs = addBaseConfig({
       filename: path.join(__dirname, 'index.html'),
       template: 'src/html/index.html'
     }),
-    new UglifyPlugin({
-      uglifyOptions: {
-        compress: {
-          unused: false
-        }
-      }
-    })
   ],
   optimization: {
     minimizer: [
