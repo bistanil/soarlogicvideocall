@@ -8,7 +8,6 @@ const configs = addBaseConfig({
   mode: 'production',
   output: {
     filename: 'js/[name].min.js',
-    publicPath: '/'
   },
   module: {
     rules: [
