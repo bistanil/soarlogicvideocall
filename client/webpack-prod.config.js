@@ -28,6 +28,7 @@ const configs = addBaseConfig({
               name: '[name].[ext]',
               outputPath: 'assets',
               publicPath: '/dist/assets',
+              contentBase: './',
             }
           }
         ]
