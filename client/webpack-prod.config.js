@@ -7,8 +7,7 @@ const addBaseConfig = require('./webpack-base.config');
 const configs = addBaseConfig({
   mode: 'production',
   output: {
-    filename: 'js/[name].min.js',
-    publicPath: '/dist/assets'
+    filename: 'js/[name].min.js'
   },
   module: {
     rules: [
@@ -27,7 +26,7 @@ const configs = addBaseConfig({
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'assets',
+              outputPath: '/dist/assets',
               publicPath: '/dist/assets'
             }
           }
@@ -41,7 +40,7 @@ const configs = addBaseConfig({
       title: 'React VideoCall - Minh Son Nguyen',
       filename: path.join(__dirname, 'index.html'),
       template: 'src/html/index.html'
-    }),
+    })
   ],
   optimization: {
     minimizer: [
