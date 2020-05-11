@@ -7,16 +7,17 @@ import CallingScreen from "./CallingScreen";
 class App extends Component {
 	render() {
 		return (
+			<div className="App">
 				<Router>
-					<div className="App">
 					<Switch>
 						<Route exact path="/register" component={Signup} />
 						<Route exact path="/login" component={Login} />
-                        <Route exact path="/callingScreen" component={CallingScreen} />
+						<Route exact path="/callingScreen" component={CallingScreen} />
 						<Redirect from="/" to="login" />
 					</Switch>
-					</div>
+					
 				</Router>
+			</div>
 		);
 	}
 }
