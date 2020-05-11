@@ -34,9 +34,6 @@ const configs = addBaseConfig({
       }
     ]
   },
-  devServer: {
-    historyApiFallback: true, 
-  },
   plugins: [
     new MiniCssExtractPlugin({ filename: 'css/[name].min.css' }),
     new HtmlWebpackPlugin({
