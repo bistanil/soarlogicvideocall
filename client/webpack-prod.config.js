@@ -27,20 +27,17 @@ const configs = addBaseConfig({
             options: {
               name: '[name].[ext]',
               outputPath: 'assets',
-              publicPath: '/dist/assets'
+              publicPath: '/dist/assets',
             }
           }
         ]
       }
     ]
   },
-  devServer: {
-    historyApiFallback: true
-  },
   plugins: [
     new MiniCssExtractPlugin({ filename: 'css/[name].min.css' }),
     new HtmlWebpackPlugin({
-      title: 'React VideoCall - Minh Son Nguyen',
+      title: 'React VideoCall - Soarlogic',
       filename: path.join(__dirname, 'index.html'),
       template: 'src/html/index.html'
     })
