@@ -3,7 +3,6 @@ const _ = require('lodash');
 const sharedConfigs = {
   context: __dirname,
   entry: {
-    
     app: './src/index.js'
   },
   module: {
