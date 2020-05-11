@@ -33,7 +33,7 @@ const Login =(props) => {
             password: password,
         };
         console.log("DATA",data)
-        Axios.post('http://192.168.225.127:4000/api//login', data)
+        Axios.post('https://videocallsoarlogic.herokuapp.com/api//login', data)
 		.then(res =>{
             console.log("STATUS",res)
             console.log("PROPS",props)
