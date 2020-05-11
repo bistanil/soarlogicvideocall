@@ -3,16 +3,11 @@ import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-d
 import Login from './Login';
 import Signup from "./SignUp";
 import CallingScreen from "./CallingScreen";
-import { createHistory } from 'history';
 
-const history = useRouterHistory(createHistory)({
-	basename: '/login'
-})
 class App extends Component {
-	
 	render() {
 		return (
-				<Router history={history}>
+				<Router>
 					<div className="App">
 					<Switch>
 						<Route exact path="/register" component={Signup} />
