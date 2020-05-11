@@ -33,7 +33,7 @@ const Login =(props) => {
             password: password,
         };
         console.log("DATA",data)
-        Axios.post('https://videocallsoarlogic.herokuapp.com/api//login', data)
+        Axios.post('https://videocallsoarlogic.herokuapp.com/api/login', data)
 		.then(res =>{
             console.log("STATUS",res)
             console.log("PROPS",props)
@@ -54,8 +54,8 @@ const Login =(props) => {
     };
 
     return (
-      <div className="Login">
-        <h1> {LOGIN_FIELDS.LOGIN_HEADING} </h1> {' '}
+      <div className="login">
+        <h1 className="m-0"> {LOGIN_FIELDS.LOGIN_HEADING} </h1> {' '}
           <div>
             <div className="fields">
               <p> {COMMON_FIELDS.USER_NAME} </p>    {' '}

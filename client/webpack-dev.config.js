@@ -6,7 +6,8 @@ const addBaseConfig = require('./webpack-base.config');
 const configs = addBaseConfig({
   mode: 'development',
   output: {
-    filename: 'js/[name].js'
+    filename: 'js/[name].js',
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -39,6 +40,7 @@ const configs = addBaseConfig({
   devServer: {
     compress: true,
     port: 9000,
+    historyApiFallback: true,
     proxy: {
       '/bridge/': `http://localhost:${socketConfig.PORT}`
     },
