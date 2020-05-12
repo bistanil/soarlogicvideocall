@@ -26,11 +26,6 @@ const configs = addBaseConfig({
         use: [
           {
             loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'assets',
-              publicPath: '/dist/assets'
-            }
           }
         ]
       }
