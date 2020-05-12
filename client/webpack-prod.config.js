@@ -7,7 +7,9 @@ const addBaseConfig = require('./webpack-base.config');
 const configs = addBaseConfig({
   mode: 'production',
   output: {
-    filename: 'js/[name].min.js'
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'js/[name].min.js',
+    publicPath: '/' 
   },
   module: {
     rules: [
@@ -33,6 +35,9 @@ const configs = addBaseConfig({
         ]
       }
     ]
+  },
+  devServer: {                    
+    historyApiFallback: true,
   },
   plugins: [
     new MiniCssExtractPlugin({ filename: 'css/[name].min.css' }),
