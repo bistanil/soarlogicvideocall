@@ -1,8 +1,7 @@
 
 {
-  "root": "client/",
-  "routes": {
-    "/**": "index.html"
-  },
-  "https_only": true
+    "routes": {
+    "/*.html": "index.html",
+    "/route/**": "client/index.html"
+    }
 }
