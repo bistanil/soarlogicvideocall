@@ -53,7 +53,9 @@ const Signup = (props)=> {
         Axios.post('https://videocallsoarlogic.herokuapp.com/api/register', data)
         .then(res => {
             console.log("STATUS",res)
-            
+            if(res.data == "OK"){
+              alert("congratulations you are registered successfully")
+            }
         }).catch(function(error) {
             console.log("ERROR",error);
         });
@@ -117,7 +119,7 @@ const Signup = (props)=> {
                 >
                   {REGISTRATION_FIELDS.REGISTER}
                 </button>
-                <Link to="/login"></Link>
+                <Link to="/login">Login</Link>
               </div>
             </div>
          
